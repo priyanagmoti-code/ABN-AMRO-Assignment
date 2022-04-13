@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="ABN-AMRO Account Opening Automation Test Suite">
+
+	<test name="Open Single User Account">
+
+		<parameter name="url"
+			value="https://www.abnamro.nl/en/personal/payments/open-an-account/open-own-account.html" />
+		<parameter name="browser" value="chrome" />
+
+		<classes>
+			<class name="com.abnamro.assignment.testcases.TCOpenOwnAccount"></class>
+		</classes>
+	</test>
+	
+	<test name="Validation messages check">
+
+		<parameter name="url"
+			value="https://www.abnamro.nl/en/personal/payments/open-an-account/open-own-account.html" />
+		<parameter name="browser" value="chrome" />
+
+		<classes>
+			<class name="com.abnamro.assignment.testcases.TCValidationCheck"></class>
+		</classes>
+	</test>
+
+</suite>
+
+
